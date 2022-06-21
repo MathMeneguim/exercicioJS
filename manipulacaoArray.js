@@ -47,3 +47,15 @@ console.log('\n8. Remova os valores duplicados.');
   const uniqueNum = [...new Set(lista)];
   console.log('lista sem valors duplicados = ', uniqueNum)
 
+
+console.log('\n9. Separe em duas listas sendo a primeira 1 elemento maior que a segunda, uma contendo os menores valores e outra com os maiores.');
+  function array_chunk(arr, len) {
+    let chunks = [], i = 0, n = arr.length
+    while (i < n) {
+      chunks.push(arr.slice(i, i += len))
+    }
+    return chunks
+  } //funcao que divide array em 'subarrays' 'arr = nome do array, len = em quantos dividir'
+  lista.sort((a, b) => a - b); //ordena o array principal
+  console.log(array_chunk(lista, (lista.length/2))); //len = o numero de elementos da lista dividido por 2
+
