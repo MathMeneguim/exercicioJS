@@ -59,3 +59,12 @@ console.log('\n9. Separe em duas listas sendo a primeira 1 elemento maior que a 
   lista.sort((a, b) => a - b); //ordena o array principal
   console.log(array_chunk(lista, (lista.length/2))); //len = o numero de elementos da lista dividido por 2
 
+
+console.log('\n10. Exiba na tela três valores que representam exatamente os elementos posicionados no meio da lista.');
+var tamanho = lista.length;
+if (tamanho % 2 != 0) {
+  tamanho = tamanho - 1
+}
+var meio = tamanho / 2
+
+console.log(lista[meio],lista[meio+1],lista[meio+2])
