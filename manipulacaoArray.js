@@ -37,7 +37,13 @@ console.log('\n6. Mova o sétimo elemento para a segunda posição.');
   listaMovida = changePosition(lista, 6, 1);
   console.log('lista com elemento movido = ',listaMovida);
 
-  
+
 console.log('\n7. Inclua um elemento com o valor "100" na terceira posição.');
   lista.splice(2,0, 100)
   console.log('lista com o numero 100 = ', lista)
+
+
+console.log('\n8. Remova os valores duplicados.');
+  const uniqueNum = [...new Set(lista)];
+  console.log('lista sem valors duplicados = ', uniqueNum)
+
