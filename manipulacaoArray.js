@@ -8,10 +8,16 @@ console.log('\n1. Classifique a lista em ordem crescente.');
  console.log('\n2. Classifique a lista em ordem decrecente.');
   console.log('Lista Decrescente = ', lista.sort((a, b) => b - a))
 
-  
+
 console.log('\n3. Encontre o maior valor.');
   function maiorNumero(numArray) {
     return Math.max.apply(null, numArray);
   }
   console.log('Maior Numero = ', maiorNumero(lista) );
 
+
+console.log('\n4. Encontre o menor valor.');
+  function menorNumero(numArray) {
+    return Math.min.apply(null, numArray);
+  }
+  console.log('Menor Numero =', menorNumero(lista));
